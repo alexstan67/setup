@@ -37,7 +37,8 @@ echo "####################################################################"
 echo "-----------  Install SNAP Packages"
 echo "####################################################################"
 sudo snap install postman thunderbird brave cherrytree dbeaver-ce projectlibre \
-                  cups marble torrhunt signal-desktop podcasts slack
+                  cups marble torrhunt signal-desktop podcasts slack \
+                  libreoffice
 sleep 2
 
 echo "####################################################################"
@@ -76,7 +77,7 @@ echo "------------- Configuration Files"
 echo "####################################################################"
 
 echo "------------- Setup vim"
-mkdir -p Github/as-consult && cd ~/Github/as-consult
+mkdir -p ~/Github/as-consult && cd ~/Github/as-consult
 git clone https://github.com/as-consult/setup.git
 ln -s ~/Github/as-consult/setup/vimrc ~/.vimrc
 mkdir -p ~/.vim/spell
@@ -110,7 +111,7 @@ echo 'alias r-grep="grep -rin --exclude-dir={tmp,log}"'  >> ~/.zshrc
 sleep 2
 
 echo "------------- Setup oh-my-zsh plugin"
-cd $ZSH/plugins
+cd /home/alex/.oh-my-zsh/plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting
 
@@ -170,3 +171,7 @@ echo "-----------  APT Clean"
 echo "####################################################################"
 sudo apt update && sudo apt -y upgrade && sudo apt autoclean && \
 sudo apt -y autoremove
+
+echo "####################################################################"
+echo "-----------  End of Post Install Process"
+echo "####################################################################"
