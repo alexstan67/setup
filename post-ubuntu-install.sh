@@ -26,7 +26,8 @@ sudo apt install -y git gh usb-creator-gtk python3-pip vim lynx tree gimp \
                     testdisk openscad librecad stellarium nextcloud-desktop \
                     nautilus-nextcloud qemu-system virt-manager bridge-utils \
                     zsh curl net-tools whois nmap traceroute transmission \
-                    metadata-cleaner timeshift pdftk postgresql-client
+                    metadata-cleaner timeshift pdftk postgresql-client \
+                    gnome-browser-connector
 # testdisk  = recovery tool
 # pdftk     = manage pdf (concat, ..) https://www.pdflabs.com/docs/pdftk-cli-examples/
 # qrencode  = generate a qr code, c.f. qrencode -o "wef" -s 6 -l H -m 2 "https://weekend-fly.com"
